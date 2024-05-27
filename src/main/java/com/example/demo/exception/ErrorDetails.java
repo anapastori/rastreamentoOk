@@ -1,0 +1,42 @@
+package src.main.java.com.example.demo.exception;
+
+
+public class ErrorDetails {
+    private Date timestamp;
+    private String message;
+    private String details;
+
+    public ErrorDetails(Date timestamp, String message, String details) {
+        super();
+        this.timestamp = timestamp;
+        this.message = message;
+        this.details =details;
+}
+
+    public ErrorDetails(java.util.Date date, Class<?> aClass, Object description) {
+    }
+
+    public Date getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public String getDetails() {
+        return details;
+    }
+
+    public void setDetails(String details) {
+        this.details = details;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+}
